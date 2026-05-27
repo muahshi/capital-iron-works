@@ -1,0 +1,597 @@
+html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Iron Works - Storage Solutions & Metal Art, Bhopal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBlack: '#0D0D0D',
+                        brandGrey: '#1F1F1F',
+                        brandSteel: '#8E9AAF',
+                        brandOrange: '#FF7A00', // Board ka sharp orange color
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom Style for Welding Sparkle Effect and Smooth Transitions -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .orange-glow {
+            box-shadow: 0 0 15px rgba(255, 122, 0, 0.4);
+        }
+        .orange-glow-hover:hover {
+            box-shadow: 0 0 25px rgba(255, 122, 0, 0.7);
+        }
+        /* Welding Spark Animation */
+        @keyframes spark {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.1); filter: drop-shadow(0 0 8px #FF7A00); }
+        }
+        .sparkle-effect {
+            animation: spark 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-brandBlack text-white font-sans selection:bg-brandOrange selection:text-black">
+
+    <!-- Top Info Bar (Proprietor & Location Info) -->
+    <div class="bg-brandGrey border-b border-zinc-800 text-xs md:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="text-brandOrange font-bold">PROPRIETOR:</span>
+                <span class="tracking-wider font-semibold text-zinc-300">TAHIR HASAN</span>
+            </div>
+            <div class="flex items-center gap-4 text-zinc-400">
+                <span class="flex items-center gap-1">
+                    📍 Shop No 33, Bal Vihar Choraha, Bhopal, MP
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-zinc-800 py-4 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo area echoing the board -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="bg-brandOrange text-black font-black p-2 rounded text-xl flex items-center justify-center orange-glow transition-transform duration-300 group-hover:scale-105">
+                    M
+                </div>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-black tracking-tight flex items-center gap-1">
+                        CAPITAL <span class="text-brandOrange">IRON WORKS</span>
+                    </h1>
+                    <p class="text-[9px] text-zinc-400 tracking-widest uppercase">Storage Solutions & Fabrication</p>
+                </div>
+            </a>
+
+            <!-- Quick Desktop Links -->
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="#about" class="text-zinc-300 hover:text-brandOrange transition">Hamare Bare Me</a>
+                <a href="#seasons" class="text-zinc-300 hover:text-brandOrange transition">Mausam ke Products</a>
+                <a href="#calculator" class="text-zinc-300 hover:text-brandOrange transition">Price Calculator</a>
+                <a href="#all-season" class="text-zinc-300 hover:text-brandOrange transition">Industrial Racks</a>
+            </div>
+
+            <!-- Header Connect button -->
+            <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%20Capital%20Iron%20Works%20ke%20products%20ke%20bare%20me%20puchna%20hai." 
+               target="_blank" 
+               class="bg-brandOrange hover:bg-orange-600 text-black font-bold px-4 py-2 rounded text-xs md:text-sm transition flex items-center gap-2 orange-glow">
+                📞 WhatsApp Contact
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Industrial theme with Spark animation) -->
+    <section class="relative bg-gradient-to-b from-brandGrey to-brandBlack py-16 px-4 md:px-8 overflow-hidden">
+        <!-- Background decorative grid -->
+        <div class="absolute inset-0 opacity-5 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="inline-block bg-brandGrey border border-zinc-700 text-brandOrange font-bold text-xs px-3 py-1.5 rounded-full mb-6 tracking-widest uppercase">
+                ⚙️ Fabricators • Traders • Designers
+            </span>
+            <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-6">
+                Bhopal Ki Sabse Majboot <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandOrange to-orange-400">Metal Fabrication & Racks</span> Shop!
+            </h2>
+            <p class="text-zinc-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed mb-8">
+                Bal Vihar Choraha par sthit, hum banate hain sabse heavy quality ke Cooler Bodies, Slotted Angle Racks, Heavy Duty Pallet Racks, aur ab aapki balconies ke liye khubsurat designer <span class="text-brandOrange font-semibold">Metal Plant Stands & Pots</span>!
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#seasons" class="bg-brandOrange hover:bg-orange-600 text-black font-extrabold px-6 py-3.5 rounded transition transform hover:-translate-y-1 orange-glow-hover flex items-center gap-2 text-sm md:text-base">
+                    📦 Seasonal Products Dekhein
+                </a>
+                <a href="#calculator" class="bg-zinc-800 hover:bg-zinc-700 text-white font-semibold px-6 py-3.5 rounded transition text-sm md:text-base">
+                    📐 Estimate Calculate Karein
+                </a>
+            </div>
+        </div>
+
+        <!-- Orange sparkle accent lines mimicking welding sparks -->
+        <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-[1px] bg-gradient-to-r from-transparent via-brandOrange to-transparent sparkle-effect"></div>
+    </section>
+
+    <!-- Main Navigation/Selection Section for SEASONS -->
+    <section id="seasons" class="py-16 px-4 md:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl md:text-4xl font-black tracking-tight mb-3">Mausam Ke Hisab Se Behtareen Products</h3>
+            <p class="text-zinc-400 text-sm md:text-base max-w-xl mx-auto">
+                Bina mausam kharab huye, sahi samay par sahi cheez khareedein. Niche diye gaye seasons par click karke hamari exclusive range dekhein!
+            </p>
+        </div>
+
+        <!-- Season Toggle Navigation Buttons -->
+        <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-10 max-w-3xl mx-auto bg-brandGrey p-2 rounded-lg border border-zinc-800">
+            <button onclick="switchSeason('summer')" id="btn-summer" class="flex-1 min-w-[120px] py-3 px-4 rounded-md text-sm md:text-base font-bold transition duration-200 flex items-center justify-center gap-2 bg-brandOrange text-black">
+                ☀️ Garmi Ka Season <span class="text-xs bg-black/10 px-1.5 py-0.5 rounded">(Apr-Jun)</span>
+            </button>
+            <button onclick="switchSeason('monsoon')" id="btn-monsoon" class="flex-1 min-w-[120px] py-3 px-4 rounded-md text-sm md:text-base font-bold transition duration-200 flex items-center justify-center gap-2 text-zinc-400 hover:text-white">
+                🌧️🪴 Baarish & Thand <span class="text-xs bg-zinc-800 px-1.5 py-0.5 rounded">(Jul-Jan)</span>
+            </button>
+            <button onclick="switchSeason('all')" id="btn-all" class="flex-1 min-w-[120px] py-3 px-4 rounded-md text-sm md:text-base font-bold transition duration-200 flex items-center justify-center gap-2 text-zinc-400 hover:text-white">
+                🛠️ Heavy Duty Racks <span class="text-xs bg-zinc-800 px-1.5 py-0.5 rounded">(All Year)</span>
+            </button>
+        </div>
+
+        <!-- ☀️ SUMMER SEASON PRODUCTS -->
+        <div id="section-summer" class="season-section transition-all duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Cooler Stand Card -->
+                <div class="bg-brandGrey border border-zinc-800 rounded-xl overflow-hidden hover:border-brandOrange transition-all duration-300 flex flex-col">
+                    <div class="p-6 bg-gradient-to-b from-orange-500/10 to-transparent">
+                        <div class="text-3xl mb-4">💨</div>
+                        <h4 class="text-xl font-bold mb-2">Heavy Duty Iron Cooler Stand</h4>
+                        <p class="text-zinc-400 text-sm mb-4 leading-relaxed">
+                            Bhopal ki tez garmi me cooler ke liye sabse mazboot stand. L-shape angle se banaya gaya hai jo kitne bhi bhari cooler ka wazan jhel sake. Jung-rodhak paint ke sath!
+                        </p>
+                    </div>
+                    <div class="p-6 mt-auto border-t border-zinc-800/80 flex justify-between items-center bg-black/20">
+                        <div>
+                            <p class="text-xs text-zinc-500">Starting Price</p>
+                            <p class="text-lg font-black text-brandOrange">₹399 <span class="text-xs font-normal text-zinc-400">Onwards</span></p>
+                        </div>
+                        <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%20Heavy%20Duty%20Cooler%20Stand%20ke%20bare%20me%20puchna%20hai." 
+                           target="_blank" 
+                           class="bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold text-xs px-4 py-2.5 rounded flex items-center gap-1.5 transition">
+                           Order On WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Custom Cooler Body Card -->
+                <div class="bg-brandGrey border border-zinc-800 rounded-xl overflow-hidden hover:border-brandOrange transition-all duration-300 flex flex-col">
+                    <div class="p-6 bg-gradient-to-b from-orange-500/10 to-transparent">
+                        <div class="text-3xl mb-4">❄️</div>
+                        <h4 class="text-xl font-bold mb-2">Custom Cooler Sheet-Metal Body</h4>
+                        <p class="text-zinc-400 text-sm mb-4 leading-relaxed">
+                            Aapke purane ya naye cooler ke liye high-gauge galvanised iron sheet se bani custom bodies. Isme thandak zyada milti hai aur body kabhi sadi ya galti nahi hai.
+                        </p>
+                    </div>
+                    <div class="p-6 mt-auto border-t border-zinc-800/80 flex justify-between items-center bg-black/20">
+                        <div>
+                            <p class="text-xs text-zinc-500">Starting Price</p>
+                            <p class="text-lg font-black text-brandOrange">₹2,499 <span class="text-xs font-normal text-zinc-400">Onwards</span></p>
+                        </div>
+                        <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%20Custom%20Cooler%20Sheet-Metal%20Body%20ke%20bare%20me%20puchna%20hai." 
+                           target="_blank" 
+                           class="bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold text-xs px-4 py-2.5 rounded flex items-center gap-1.5 transition">
+                           Order On WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Commercial Desert Cooler Frame Card -->
+                <div class="bg-brandGrey border border-zinc-800 rounded-xl overflow-hidden hover:border-brandOrange transition-all duration-300 flex flex-col">
+                    <div class="p-6 bg-gradient-to-b from-orange-500/10 to-transparent">
+                        <div class="text-3xl mb-4">🏢</div>
+                        <h4 class="text-xl font-bold mb-2">Commercial Desert Cooler Frame</h4>
+                        <p class="text-zinc-400 text-sm mb-4 leading-relaxed">
+                            Badi dukano, showrooms, aur hall ke liye jumbo size desert cooler steel frames. Pure heavy square pipe fabrication aur double coat security paint ke sath tayyar.
+                        </p>
+                    </div>
+                    <div class="p-6 mt-auto border-t border-zinc-800/80 flex justify-between items-center bg-black/20">
+                        <div>
+                            <p class="text-xs text-zinc-500">Starting Price</p>
+                            <p class="text-lg font-black text-brandOrange">₹4,999 <span class="text-xs font-normal text-zinc-400">Onwards</span></p>
+                        </div>
+                        <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%20Commercial%20Desert%20Cooler%20Frame%20ke%20bare%20me%20puchna%20hai." 
+                           target="_blank" 
+                           class="bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold text-xs px-4 py-2.5 rounded flex items-center gap-1.5 transition">
+                           Order On WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🌧️ MONSOON & WINTER SEASON PRODUCTS -->
+        <div id="section-monsoon" class="season-section hidden transition-all duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Multi-Tier Step Plant Stand -->
+                <div class="bg-brandGrey border border-zinc-800 rounded-xl overflow-hidden hover:border-brandOrange transition-all duration-300 flex flex-col">
+                    <div class="p-6 bg-gradient-to-b from-green-500/10 to-transparent">
+                        <div class="text-3xl mb-4">🪴</div>
+                        <h4 class="text-xl font-bold mb-2">3-Tier Step Metal Plant Stand</h4>
+                        <p class="text-zinc-400 text-sm mb-4 leading-relaxed">
+                            Balcony me space bachane ke liye sidhi numa stand. Pure square pipe se fabricated, jo 10 bade plastic gamlo ko aaram se sambhal leta hai. Zameen kharab nahi hone deta.
+                        </p>
+                    </div>
+                    <div class="p-6 mt-auto border-t border-zinc-800/80 flex justify-between items-center bg-black/20">
+                        <div>
+                            <p class="text-xs text-zinc-500">Starting Price</p>
+                            <p class="text-lg font-black text-brandOrange">₹899 <span class="text-xs font-normal text-zinc-400">Onwards</span></p>
+                        </div>
+                        <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%203-Tier%20Step%20Metal%20Plant%20Stand%20ke%20bare%20me%20puchna%20hai." 
+                           target="_blank" 
+                           class="bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold text-xs px-4 py-2.5 rounded flex items-center gap-1.5 transition">
+                           Order On WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Railing Hooks & Designer Pots Combo -->
+                <div class="bg-brandGrey border border-zinc-800 rounded-xl overflow-hidden hover:border-brandOrange transition-all duration-300 flex flex-col">
+                    <div class="p-6 bg-gradient-to-b from-green-500/10 to-transparent">
+                        <div class="text-3xl mb-4">🏵️</div>
+                        <h4 class="text-xl font-bold mb-2">Railing Hooks + Premium Plastic Pots</h4>
+                        <p class="text-zinc-400 text-sm mb-4 leading-relaxed">
+                            Aapki railing par tangne wale majboot metal hooks ke sath lightweight, colorful, aur UV-resistant plastic flower pots ka solid combo setup. Balcony ko hara bhara karein!
+                        </p>
+                    </div>
+                    <div class="p-6 mt-auto border-t border-zinc-800/80 flex justify-between items-center bg-black/20">
+                        <div>
+                            <p class="text-xs text-zinc-500">Starting Price</p>
+                            <p class="text-lg font-black text-brandOrange">₹249 <span class="text-xs font-normal text-zinc-400">per unit</span></p>
+                        </div>
+                        <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%20Railing%20Hooks%20plus%20Premium%20Plastic%20Pots%20combo%20ke%20bare%20me%20puchna%20hai." 
+                           target="_blank" 
+                           class="bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold text-xs px-4 py-2.5 rounded flex items-center gap-1.5 transition">
+                           Order On WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tower Plant Stand (Vertical) -->
+                <div class="bg-brandGrey border border-zinc-800 rounded-xl overflow-hidden hover:border-brandOrange transition-all duration-300 flex flex-col">
+                    <div class="p-6 bg-gradient-to-b from-green-500/10 to-transparent">
+                        <div class="text-3xl mb-4">🗼</div>
+                        <h4 class="text-xl font-bold mb-2">Vertical Tower Plant Stand</h4>
+                        <p class="text-zinc-400 text-sm mb-4 leading-relaxed">
+                            Ek single metal column design jisme 5-6 gamlo ko vertical tarike se sajaya ja sakta hai. Corner spaces aur drawing room me artificial paudo ke liye lajawab choice!
+                        </p>
+                    </div>
+                    <div class="p-6 mt-auto border-t border-zinc-800/80 flex justify-between items-center bg-black/20">
+                        <div>
+                            <p class="text-xs text-zinc-500">Starting Price</p>
+                            <p class="text-lg font-black text-brandOrange">₹1,199 <span class="text-xs font-normal text-zinc-400">Onwards</span></p>
+                        </div>
+                        <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%20Vertical%20Tower%20Plant%20Stand%20ke%20bare%20me%20puchna%20hai." 
+                           target="_blank" 
+                           class="bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold text-xs px-4 py-2.5 rounded flex items-center gap-1.5 transition">
+                           Order On WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 🛠️ INDUSTRIAL & STORAGE SOLUTIONS (All year) -->
+        <div id="section-all" class="season-section hidden transition-all duration-300">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Slotted Angle Racks -->
+                <div class="bg-brandGrey border border-zinc-800 rounded-xl overflow-hidden hover:border-brandOrange transition-all duration-300 flex flex-col">
+                    <div class="p-6 bg-gradient-to-b from-zinc-500/10 to-transparent">
+                        <div class="text-3xl mb-4">📊</div>
+                        <h4 class="text-xl font-bold mb-2">Slotted Angle Racks</h4>
+                        <p class="text-zinc-400 text-sm mb-4 leading-relaxed">
+                            Dukan, warehouse, aur ghar ke store room ke liye adjust hone wale slotted metal racks. Heavy sheet-metal shelfs jo zyadatar load jhelne ke liye test kiye jate hain.
+                        </p>
+                    </div>
+                    <div class="p-6 mt-auto border-t border-zinc-800/80 flex justify-between items-center bg-black/20">
+                        <div>
+                            <p class="text-xs text-zinc-500">Starting Price</p>
+                            <p class="text-lg font-black text-brandOrange">₹2,199 <span class="text-xs font-normal text-zinc-400">Onwards</span></p>
+                        </div>
+                        <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%20Slotted%20Angle%20Racks%20ke%20bare%20me%20puchna%20hai." 
+                           target="_blank" 
+                           class="bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold text-xs px-4 py-2.5 rounded flex items-center gap-1.5 transition">
+                           Order On WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Heavy Duty Pallet Racks -->
+                <div class="bg-brandGrey border border-zinc-800 rounded-xl overflow-hidden hover:border-brandOrange transition-all duration-300 flex flex-col">
+                    <div class="p-6 bg-gradient-to-b from-zinc-500/10 to-transparent">
+                        <div class="text-3xl mb-4">🏗️</div>
+                        <h4 class="text-xl font-bold mb-2">Heavy Duty Pallet Racks</h4>
+                        <p class="text-zinc-400 text-sm mb-4 leading-relaxed">
+                            Industrial scale warehouse storage. Upright frames, load-beams, aur solid fabrication jo 1 se 3 ton tak ka wazan utha sakte hain forklift loading ke liye.
+                        </p>
+                    </div>
+                    <div class="p-6 mt-auto border-t border-zinc-800/80 flex justify-between items-center bg-black/20">
+                        <div>
+                            <p class="text-xs text-zinc-500">Contact For Price</p>
+                            <p class="text-lg font-black text-brandOrange">Custom Pricing</p>
+                        </div>
+                        <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%20Heavy%20Duty%20Pallet%20Racks%20ki%20requirement%20hai,%20quotation%20chahiye." 
+                           target="_blank" 
+                           class="bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold text-xs px-4 py-2.5 rounded flex items-center gap-1.5 transition">
+                           Get Quote
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mezzanine Floors & Lockers -->
+                <div class="bg-brandGrey border border-zinc-800 rounded-xl overflow-hidden hover:border-brandOrange transition-all duration-300 flex flex-col">
+                    <div class="p-6 bg-gradient-to-b from-zinc-500/10 to-transparent">
+                        <div class="text-3xl mb-4">🏢</div>
+                        <h4 class="text-xl font-bold mb-2">Mezzanine Floors & Lockers</h4>
+                        <p class="text-zinc-400 text-sm mb-4 leading-relaxed">
+                            Bina deewar khadi kiye dukan ke upar extra floor banayein (Mezzanine Floors) aur staff ke safety ke liye metal lockers aur heavy almirah fabrication.
+                        </p>
+                    </div>
+                    <div class="p-6 mt-auto border-t border-zinc-800/80 flex justify-between items-center bg-black/20">
+                        <div>
+                            <p class="text-xs text-zinc-500">Contact For Price</p>
+                            <p class="text-lg font-black text-brandOrange">Custom Design</p>
+                        </div>
+                        <a href="https://wa.me/919575877758?text=Hello%20Tahir%20Bhai,%20mujhe%20Mezzanine%20Floor%20ya%20Locker%20ke%20design%20aur%20cost%20ke%20bare%20me%20baat%20karni%20hai." 
+                           target="_blank" 
+                           class="bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold text-xs px-4 py-2.5 rounded flex items-center gap-1.5 transition">
+                           Get Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Estimate & Quote Calculator -->
+    <section id="calculator" class="bg-zinc-950 py-16 px-4 md:px-8 border-t border-b border-zinc-900">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-10">
+                <span class="text-brandOrange font-bold text-xs uppercase tracking-widest bg-brandGrey border border-zinc-800 px-3 py-1 rounded">Smart Tools</span>
+                <h3 class="text-2xl md:text-3xl font-black tracking-tight mt-3 mb-2">Apne Stand/Rack Ka Estimate Nikalein</h3>
+                <p class="text-zinc-400 text-xs md:text-sm">Kuch clicks me pata lagayein ki aapke custom design ka kitna kharcha aa sakta hai!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-brandGrey p-6 md:p-8 rounded-2xl border border-zinc-800">
+                <!-- Inputs Form -->
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-bold text-zinc-300 mb-2">1. Kya banana chahte hain?</label>
+                        <select id="calc-product-type" onchange="calculatePrice()" class="w-full bg-black border border-zinc-700 rounded-md p-3 text-white focus:border-brandOrange outline-none">
+                            <option value="plant-stand">Designer Metal Plant Stand (Gamla Stand)</option>
+                            <option value="slotted-rack">Commercial Slotted Angle Rack</option>
+                            <option value="cooler-stand">Heavy Duty Cooler Stand</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-zinc-300 mb-2">2. Steps / Shelves ki sankhya (Tiers)</label>
+                        <select id="calc-tiers" onchange="calculatePrice()" class="w-full bg-black border border-zinc-700 rounded-md p-3 text-white focus:border-brandOrange outline-none">
+                            <option value="2">2 Tiers / Steps / Shelves</option>
+                            <option value="3" selected>3 Tiers / Steps / Shelves</option>
+                            <option value="4">4 Tiers / Steps / Shelves</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-zinc-300 mb-2">3. Width/Chaudai (Feet me)</label>
+                        <select id="calc-width" onchange="calculatePrice()" class="w-full bg-black border border-zinc-700 rounded-md p-3 text-white focus:border-brandOrange outline-none">
+                            <option value="2">2 Feet</option>
+                            <option value="3" selected>3 Feet (Standard)</option>
+                            <option value="4">4 Feet</option>
+                            <option value="5">5 Feet</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-zinc-300 mb-2">4. Metal Finish / Painting Type</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="bg-black border border-zinc-700 rounded-md p-3 flex items-center gap-2 cursor-pointer hover:border-brandOrange">
+                                <input type="radio" name="paint-type" value="basic" checked onchange="calculatePrice()" class="accent-brandOrange">
+                                <span class="text-xs font-semibold">Standard Paint</span>
+                            </label>
+                            <label class="bg-black border border-zinc-700 rounded-md p-3 flex items-center gap-2 cursor-pointer hover:border-brandOrange">
+                                <input type="radio" name="paint-type" value="premium" onchange="calculatePrice()" class="accent-brandOrange">
+                                <span class="text-xs font-semibold">Premium Powder-Coat</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Pricing Box -->
+                <div class="bg-black rounded-xl p-6 border border-zinc-800 flex flex-col justify-between text-center md:text-left">
+                    <div>
+                        <span class="text-zinc-500 text-xs uppercase tracking-wider">Estimated Material Cost</span>
+                        <div class="my-4">
+                            <span class="text-3xl md:text-5xl font-black text-white" id="display-price">₹1,199</span>
+                            <span class="text-zinc-500 text-xs block mt-1">*Yeh ek anumaanit keemat hai (materials aur labor ke aadhar par).</span>
+                        </div>
+
+                        <div class="border-t border-zinc-800 pt-4 mt-4 space-y-2 text-left text-xs md:text-sm text-zinc-400">
+                            <p>✔️ High-quality solid MS iron components</p>
+                            <p>✔️ Professional welding & seamless grinder finishing</p>
+                            <p>✔️ Double coat paint protection</p>
+                        </div>
+                    </div>
+
+                    <button onclick="sendCalculatedQuote()" class="w-full bg-brandOrange hover:bg-orange-600 text-black font-extrabold py-3.5 px-4 rounded-md mt-6 transition flex items-center justify-center gap-2 orange-glow">
+                        💬 WhatsApp Par Custom Inquiry Bheinjein
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bhopal Case Study & Experience Section (Requested Personalization) -->
+    <section id="about" class="py-16 px-4 md:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-brandOrange font-bold text-xs uppercase tracking-widest">Story of Capital Iron Works</span>
+                <h3 class="text-2xl md:text-4xl font-black tracking-tight mt-3 mb-6">Hamara Bhopal Ka Case Study & Tajurba</h3>
+                
+                <div class="space-y-6 text-zinc-300 text-sm md:text-base leading-relaxed">
+                    <p>
+                        Bhopal me **Bittan Market, New Market, aur Lalghati** ke paas se log mehngey mehngey paude aur gamle khareedte hain, par jab baat aati hai metal stands aur unki duribility ki, toh sasti quality ke stands dhoop aur baarish me kuch hi mahino me gal jaate hain.
+                    </p>
+                    <p class="border-l-2 border-brandOrange pl-4 italic text-zinc-400">
+                        "Hum Capital Iron Works par heavy commercial racks banate hain. Wahi industrial quality ka loha aur wahi solid welding hum hamare plant stands aur coolers me use karte hain, taaki jo cheez ek baar ban gayi, wo saalo saal kharab na ho!"
+                    </p>
+                </div>
+
+                <!-- Day vs Night Display comparison tip -->
+                <div class="mt-8 bg-brandGrey p-5 rounded-xl border border-zinc-800">
+                    <h5 class="text-brandOrange font-bold text-sm mb-2">💡 Bal Vihar Display Strategy (Bhopal Spec):</h5>
+                    <p class="text-xs text-zinc-400 leading-relaxed">
+                        Bal Vihar Choraha par aane-jaane wale log humare heavy structures dekhte hain. Din ke samay hamara exclusive focus stands aur plants display karne par hota hai jisse haryali aur rang birange pots sabka dhyan kheenchte hain, aur raat ko safety ke sath in light-weight structures ko andar kar diya jata hai.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Heavy Industrial Visual / Location Map Wrapper -->
+            <div class="relative bg-brandGrey p-8 rounded-2xl border border-zinc-800 text-center flex flex-col justify-center items-center overflow-hidden">
+                <div class="absolute inset-0 opacity-10 bg-[linear-gradient(to_right,#808080_1px,transparent_1px),linear-gradient(to_bottom,#808080_1px,transparent_1px)] bg-[size:16px_16px]"></div>
+                
+                <!-- Stylized Industrial Iconography -->
+                <div class="text-7xl mb-4 sparkle-effect">🔥</div>
+                <h4 class="text-2xl font-black text-white mb-2">Sahi Quality, Sahi Daam</h4>
+                <p class="text-zinc-400 text-xs md:text-sm max-w-sm mb-6 leading-relaxed">
+                    Hum koi cheap metal sheets use nahi karte. Hamara hardware pure iron raw material aur heavy weight iron angles se banta hai. Bal Vihar Choraha, Bhopal par hamari shop par aakar aap khud majbooti test kar sakte hain!
+                </p>
+
+                <div class="space-y-2 w-full">
+                    <div class="bg-black/40 border border-zinc-800 p-3 rounded text-left text-xs md:text-sm">
+                        <span class="text-zinc-500">📍 Location:</span>
+                        <p class="font-semibold text-white">Shop No 33, Bal Vihar Choraha, Bhopal, MP</p>
+                    </div>
+                    <div class="bg-black/40 border border-zinc-800 p-3 rounded text-left text-xs md:text-sm">
+                        <span class="text-zinc-500">📞 Phone / WhatsApp:</span>
+                        <p class="font-semibold text-white">+91 95758 77758</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Location Footer Area -->
+    <footer class="bg-black border-t border-zinc-900 py-12 px-4 md:px-8 text-center md:text-left">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <h4 class="text-lg font-black tracking-wider text-white">CAPITAL <span class="text-brandOrange">IRON WORKS</span></h4>
+                <p class="text-xs text-zinc-500 mt-1">All Types Of Iron & Steel Works | Traders | Fabricators</p>
+                <p class="text-[10px] text-zinc-600 mt-2">© 2026 Capital Iron Works. Developed for Bhopal's Finest Quality Storage.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-zinc-400">
+                <a href="#about" class="hover:text-brandOrange transition">About Us</a>
+                <a href="#seasons" class="hover:text-brandOrange transition">Products</a>
+                <a href="#calculator" class="hover:text-brandOrange transition">Calculator</a>
+                <a href="https://wa.me/919575877758" target="_blank" class="text-brandOrange font-bold hover:underline">WhatsApp Us: +91-9575877758</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Logic for Toggle and Calculator -->
+    <script>
+        // Season Navigation Logic
+        function switchSeason(season) {
+            // Hide all sections
+            document.querySelectorAll('.season-section').forEach(section => {
+                section.classList.add('hidden');
+            });
+
+            // Remove active classes from buttons
+            const buttons = ['btn-summer', 'btn-monsoon', 'btn-all'];
+            buttons.forEach(id => {
+                const btn = document.getElementById(id);
+                btn.className = "flex-1 min-w-[120px] py-3 px-4 rounded-md text-sm md:text-base font-bold transition duration-200 flex items-center justify-center gap-2 text-zinc-400 hover:text-white";
+            });
+
+            // Show target section and style button
+            if (season === 'summer') {
+                document.getElementById('section-summer').classList.remove('hidden');
+                document.getElementById('btn-summer').className = "flex-1 min-w-[120px] py-3 px-4 rounded-md text-sm md:text-base font-bold transition duration-200 flex items-center justify-center gap-2 bg-brandOrange text-black orange-glow";
+            } else if (season === 'monsoon') {
+                document.getElementById('section-monsoon').classList.remove('hidden');
+                document.getElementById('btn-monsoon').className = "flex-1 min-w-[120px] py-3 px-4 rounded-md text-sm md:text-base font-bold transition duration-200 flex items-center justify-center gap-2 bg-brandOrange text-black orange-glow";
+            } else if (season === 'all') {
+                document.getElementById('section-all').classList.remove('hidden');
+                document.getElementById('btn-all').className = "flex-1 min-w-[120px] py-3 px-4 rounded-md text-sm md:text-base font-bold transition duration-200 flex items-center justify-center gap-2 bg-brandOrange text-black orange-glow";
+            }
+        }
+
+        // Live Calculator Logic
+        function calculatePrice() {
+            const productType = document.getElementById('calc-product-type').value;
+            const tiers = parseInt(document.getElementById('calc-tiers').value);
+            const width = parseInt(document.getElementById('calc-width').value);
+            const paintType = document.querySelector('input[name="paint-type"]:checked').value;
+
+            let basePrice = 0;
+
+            if (productType === 'plant-stand') {
+                // Base formula for plant stand: 250rs per step/tier + 100rs per foot of width
+                basePrice = (tiers * 250) + (width * 150);
+            } else if (productType === 'slotted-rack') {
+                // Base formula for storage rack: 400rs per tier/shelf + 250rs per foot
+                basePrice = (tiers * 450) + (width * 250);
+            } else if (productType === 'cooler-stand') {
+                // Base formula for cooler stand: heavy angle metal based on tiers and width
+                basePrice = 300 + (tiers * 100) + (width * 100);
+            }
+
+            // Paint Modifier
+            if (paintType === 'premium') {
+                basePrice += 250; // Powder coating extra
+            }
+
+            // Display Price
+            document.getElementById('display-price').innerText = `₹${basePrice}`;
+        }
+
+        // Send Calculated details to WhatsApp
+        function sendCalculatedQuote() {
+            const productType = document.getElementById('calc-product-type').options[document.getElementById('calc-product-type').selectedIndex].text;
+            const tiers = document.getElementById('calc-tiers').value;
+            const width = document.getElementById('calc-width').value;
+            const paintType = document.querySelector('input[name="paint-type"]:checked').value === 'premium' ? 'Premium Powder-Coat' : 'Standard Paint';
+            const finalPrice = document.getElementById('display-price').innerText;
+
+            const textMessage = `Hello Tahir Bhai! Mujhe Capital Iron Works se custom requirements ke liye estimate chahiye tha. Maine website calculator par ek design check kiya tha:
+
+- Type: ${productType}
+- Tiers / Shelves: ${tiers}
+- Width: ${width} Feet
+- Paint Option: ${paintType}
+- Approx Website Price: ${finalPrice}
+
+Mujhe iska exact order aur material discuss karna hai. Kab baat ho sakti hai?`;
+
+            // WhatsApp link redirection
+            const encodedMessage = encodeURIComponent(textMessage);
+            window.open(`https://wa.me/919575877758?text=${encodedMessage}`, '_blank');
+        }
+
+        // Run calculation once on load
+        window.onload = function() {
+            calculatePrice();
+        };
+    </script>
+</body>
+</html>
+
